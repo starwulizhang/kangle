@@ -5,7 +5,7 @@ if test $# != 1;then
         exit 1;
 fi
 PREFIX=$1
-ARCH="-7"
+ARCH="-6"
 if test `ldd --version|head -1|awk '{print $NF;}'` = "2.5" ; then
         ARCH="-5"
 fi
